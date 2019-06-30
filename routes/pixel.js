@@ -1,13 +1,14 @@
 var express = require('express');
-var math = require('MAth')
+var math = require('Math')
 var router = express.Router();
 var path = require('path');
 
 /* GET users listing. */
-router.get('/:name/:delay', function(req, res, next) {
+router.get('/:name/:delay?', function(req, res, next) {
     console.log(req.params.name);
     console.log(req.params.delay);
-    
+    console.log(JSON.stringify(req.headers));
+        
     if (req.params['delay'])
         var start = Date.now()
         while (Date.now() < start + Math.min( req.params.delay * 1000, 30000)) {}
