@@ -1,0 +1,8 @@
+dns: myapp.com
+
+app:
+    url: http://${dns}/home
+    cache: redis
+
+db:
+    location: mysql-db-prod

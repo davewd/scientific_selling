@@ -1,0 +1,27 @@
+{
+  "name": "digital_marketing_serivces",
+  "version": "1.0.0",
+  "description": "A simple express node server with configuration for different environments that service 3 endpoints, link tracking, pixel tracking and delayed pixel tracking",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "browser-mac": "open http://localhost:3000",
+    "browser-win": "start http://localhost:3000",
+    "start": "node ./bin/www --env prod",
+    "devstart": "nodemon ./bin/www --env dev"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "config-yml": "^0.10.3",
+    "cookie-parser": "^1.4.4",
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "http-errors": "^1.7.3",
+    "math": "0.0.3",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.1",
+    "path": "^0.12.7"
+  },
+  "dependencies": {}
+}
