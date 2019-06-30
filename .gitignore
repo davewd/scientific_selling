@@ -22,3 +22,6 @@ chrome-user-data
 .vscode
 *.swp
 *.swo
+config/dev.yml
+config/prod.yml
+config/qa.yml
