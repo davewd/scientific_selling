@@ -3,7 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-
+var compression = require('compression');
 
 
 
@@ -19,6 +19,7 @@ console.log('Environment: '+ environment);
 
 const port = 3000
 
+app.use(compression());
 app.use(logger(environment));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
