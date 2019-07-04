@@ -9,7 +9,7 @@ var mongoose = require('mongoose');
 // Start the engine
 const app = express()
 var environment = app.get('env')
-var config = require('config-yml').load(environment)
+var config = require('config-yml');
 console.log('Environment: '+ environment);
 console.log('Mongo Environment: '+ config.mongo.url);
 

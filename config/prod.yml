@@ -1,2 +1,2 @@
 mongo:
-    url: 'mongodb://localhost/my_database'
+    url: mongodb://localhost/my_database
