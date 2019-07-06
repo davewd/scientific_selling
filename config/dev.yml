@@ -6,3 +6,6 @@ app:
 
 mongo:
     url: mongodb://localhost/my_database
+
+jwt:
+    secret: hustling_every_day
