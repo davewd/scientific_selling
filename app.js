@@ -12,7 +12,8 @@ var environment = app.get('env')
 var config = require('config-yml');
 console.log('Environment: '+ environment);
 console.log('Mongo Environment: '+ config.mongo.url);
-
+console.log('Secret: '+ config.jwt.secret);
+app.set('jwttoken',config.jwt.secret);
 
 //Set up default mongoose connection
 //Get the default connection
@@ -25,9 +26,6 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 // import the actual api endpoints
 var pixelRouter = require('./routes/pixel');
 var linkRedirectRouter = require('./routes/link-redirect');
-
-
-
 
 
 const port = 3000
