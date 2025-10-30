@@ -15,9 +15,9 @@
   "devDependencies": {
     "compression": "^1.7.4",
     "config-yml": "^0.10.3",
-    "cookie-parser": "^1.4.4",
+    "cookie-parser": "^1.4.7",
     "debug": "^4.1.1",
-    "express": "^4.17.1",
+    "express": "^4.21.2",
     "http-errors": "^1.7.3",
     "math": "0.0.3",
     "mongoose": "^5.6.3",
